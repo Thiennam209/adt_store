@@ -1,9 +1,9 @@
 {
-  "@id": "dtmi:digitaltwins:Basic:Store;1",
+  "@id": "dtmi:digitaltwins:Basic:Product;1",
   "@type": "Interface",
   "@context": ["dtmi:dtdl:context;2"],
-  "displayName": "Store layout",
-  "description": "Store layout data",
+  "displayName": "Product",
+  "description": "Products data",
   "contents": [
     {
       "@type": "Property",
