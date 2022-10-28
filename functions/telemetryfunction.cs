@@ -43,10 +43,8 @@ namespace My.Function
                     string deviceId = (string)deviceMessage["systemProperties"]["iothub-connection-device-id"];
                     var ID = deviceMessage["body"]["storeid"];
                     var TimeInterval = deviceMessage["body"]["TimeInterval"];
-                    var BestSellingProductName = deviceMessage["body"]["BestSellingProductName"];
-                    var BestSellingProductQuantity = deviceMessage["body"]["BestSellingProductQuantity"];
-                    var LeastSellingProductName = deviceMessage["body"]["LeastSellingProductName"];
-                    var LeastSellingProductQuantity = deviceMessage["body"]["LeastSellingProductQuantity"];
+                    var ProductName = deviceMessage["body"]["ProductName"];
+                    var ProductQuantity = deviceMessage["body"]["ProductQuantity"];
                     var CustomerQuantityPos1 = deviceMessage["body"]["CustomerQuantityPos1"];
                     var CustomerQuantityPos2 = deviceMessage["body"]["CustomerQuantityPos2"];
                     var CustomerQuantityPos3 = deviceMessage["body"]["CustomerQuantityPos3"];
@@ -54,10 +52,8 @@ namespace My.Function
 
                     log.LogInformation($"Device:{deviceId} Device Id is:{ID}");
                     log.LogInformation($"Device:{deviceId} Time interval is:{TimeInterval}");
-                    log.LogInformation($"Device:{deviceId} BestSellingProductName is:{BestSellingProductName}");
-                    log.LogInformation($"Device:{deviceId} BestSellingProductQuantity is:{BestSellingProductQuantity}");
-                    log.LogInformation($"Device:{deviceId} LeastSellingProductName is:{LeastSellingProductName}");
-                    log.LogInformation($"Device:{deviceId} LeastSellingProductQuantity is:{LeastSellingProductQuantity}");
+                    log.LogInformation($"Device:{deviceId} ProductName is:{ProductName}");
+                    log.LogInformation($"Device:{deviceId} ProductQuantity is:{ProductQuantity}");
                     log.LogInformation($"Device:{deviceId} CustomerQuantityPos1:{CustomerQuantityPos1}");
                     log.LogInformation($"Device:{deviceId} CustomerQuantityPos2 is:{CustomerQuantityPos2}");
                     log.LogInformation($"Device:{deviceId} CustomerQuantityPos3 is:{CustomerQuantityPos3}");
@@ -67,10 +63,8 @@ namespace My.Function
                     {
                         ["storeid"] = ID,
                         ["TimeInterval"] = TimeInterval,
-                        ["BestSellingProductName"] = BestSellingProductName,
-                        ["BestSellingProductQuantity"] = BestSellingProductQuantity,
-                        ["LeastSellingProductName"] = LeastSellingProductName,
-                        ["LeastSellingProductQuantity"] = LeastSellingProductQuantity,
+                        ["ProductName"] = ProductName,
+                        ["ProductQuantity"] = ProductQuantity,
                         ["CustomerQuantityPos1"] = CustomerQuantityPos1,
                         ["CustomerQuantityPos2"] = CustomerQuantityPos2,
                         ["CustomerQuantityPos3"] = CustomerQuantityPos3,

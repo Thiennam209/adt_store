@@ -8,29 +8,25 @@
     {
       "@type": "Property",
       "name": "storeid",
-      "displayName": "storeid",
-      "description": "The unique id of the store",
+      "displayName": "productid",
+      "description": "The unique id of the product",
       "writable": true,
       "schema": "string"
     },
     {
       "@type": "Telemetry",
-      "name": "CustomerQuantityPos1",
-      "schema": "integer"
+      "name": "TimeInterval",
+      "description": "The time interval of this data",
+      "schema": "string"
     },
     {
       "@type": "Telemetry",
-      "name": "CustomerQuantityPos2",
-      "schema": "integer"
+      "name": "ProductName",
+      "schema": "string"
     },
     {
       "@type": "Telemetry",
-      "name": "CustomerQuantityPos3",
-      "schema": "integer"
-    },
-    {
-      "@type": "Telemetry",
-      "name": "CustomerQuantityPos4",
+      "name": "ProductQuantity",
       "schema": "integer"
     }
   ]

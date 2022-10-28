@@ -30,12 +30,19 @@ git clone https://github.com/Thiennam209/adt_store.git
 
 # echo 'input model'
 storeid=$(az dt model create -n $adtname --models ./adt_store/models/store.json --query [].id -o tsv)
+productid=$(az dt model create -n $adtname --models ./adt_store/models/product.json --query [].id -o tsv)
 
 # echo 'instantiate ADT Instances'
-echo "Create auto storeid"
+echo "Create Store storeid"
 az dt twin create -n $adtname --dtmi $storeid --twin-id "storeid"
 az dt twin update -n $adtname --twin-id "storeid" --json-patch '[{"op":"add", "path":"/storeid", "value": "'"storeid"'"}]'
 
+for i in {1..10}
+do
+    echo "Create Product productid$i"
+    az dt twin create -n $adtname --dtmi $productid --twin-id "productid$i"
+    az dt twin update -n $adtname --twin-id "productid$i" --json-patch '[{"op":"add", "path":"/storeid", "value": "'"productid$i"'"}]'
+done
 
 # az eventgrid topic create -g $rgname --name $egname -l $location
 az dt endpoint create eventgrid --dt-name $adtname --eventgrid-resource-group $rgname --eventgrid-topic $egname --endpoint-name "$egname-ep"

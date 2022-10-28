@@ -17,10 +17,8 @@ namespace SignalRFunctions
     {
         public static string storeid;
         public static string timeInterval;
-        public static string BestSellingProductName;
-        public static int BestSellingProductQuantity;
-        public static string LeastSellingProductName;
-        public static int LeastSellingProductQuantity;
+        public static string ProductName;
+        public static int ProductQuantity;
         public static int CustomerQuantityPos1;
         public static int CustomerQuantityPos2;
         public static int CustomerQuantityPos3;
