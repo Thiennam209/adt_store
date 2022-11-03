@@ -8,30 +8,95 @@
     {
       "@type": "Property",
       "name": "storeid",
-      "displayName": "storeid",
-      "description": "The unique id of the store",
+      "displayName": "shelfid",
+      "description": "The unique id of the store shelf",
       "writable": true,
       "schema": "string"
     },
     {
       "@type": "Telemetry",
-      "name": "CustomerQuantityPos1",
+      "name": "CustomerQuantityLastHour",
       "schema": "integer"
     },
     {
       "@type": "Telemetry",
-      "name": "CustomerQuantityPos2",
+      "name": "CustomerQuantityLastDay",
       "schema": "integer"
     },
     {
       "@type": "Telemetry",
-      "name": "CustomerQuantityPos3",
+      "name": "CustomerQuantityTotal",
       "schema": "integer"
     },
     {
       "@type": "Telemetry",
-      "name": "CustomerQuantityPos4",
+      "name": "ShelfProductNames",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfItemQuantity",
       "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfRevenueLastHour",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfRevenueLastDay",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfRevenueTotal",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfSoldItemQuantityLastHour",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfSoldItemQuantityLastDay",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfSoldItemQuantityTotal",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfCostPerItem",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfPricePerItem",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ConversionRate",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfProfitLastHour",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfProfitLastDay",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ShelfProfitTotal",
+      "schema": "float"
     }
   ]
 }

@@ -26,8 +26,48 @@
     },
     {
       "@type": "Telemetry",
-      "name": "ProductQuantity",
+      "name": "ProductSellingRank",
       "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "SoldProductQuantity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "RemainProductQuantity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProductPrice",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProductCost",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProductDiscount",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProductProfitPerItem",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProductProfitPercentagePerItem",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ProductImageURL",
+      "schema": "string"
     }
   ]
 }

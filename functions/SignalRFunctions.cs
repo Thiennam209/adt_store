@@ -18,11 +18,32 @@ namespace SignalRFunctions
         public static string storeid;
         public static string timeInterval;
         public static string ProductName;
-        public static int ProductQuantity;
-        public static int CustomerQuantityPos1;
-        public static int CustomerQuantityPos2;
-        public static int CustomerQuantityPos3;
-        public static int CustomerQuantityPos4;
+        public static int ProductSellingRank;
+        public static int SoldProductQuantity;
+        public static int RemainProductQuantity;
+        public static float ProductPrice;
+        public static float ProductCost;
+        public static float ProductDiscount;
+        public static float ProductProfitPerItem;
+        public static float ProductProfitPercentagePerItem;
+        public static string ProductImageURL;
+        public static int CustomerQuantityLastHour;
+        public static int CustomerQuantityLastDay;
+        public static int CustomerQuantityTotal;
+        public static string ShelfProductNames;
+        public static int ShelfItemQuantity;
+        public static float ShelfRevenueLastHour;
+        public static float ShelfRevenueLastDay;
+        public static float ShelfRevenueTotal;
+        public static float ShelfSoldItemQuantityLastHour;
+        public static float ShelfSoldItemQuantityLastDay;
+        public static float ShelfSoldItemQuantityTotal;
+        public static float ShelfCostPerItem;
+        public static float ShelfPricePerItem;
+        public static float ConversionRate;
+        public static float ShelfProfitLastHour;
+        public static float ShelfProfitLastDay;
+        public static float ShelfProfitTotal;
 
         [FunctionName("negotiate")]
         public static SignalRConnectionInfo GetSignalRInfo(
