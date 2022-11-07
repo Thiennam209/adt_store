@@ -56,17 +56,17 @@
     {
       "@type": "Telemetry",
       "name": "ShelfSoldItemQuantityLastHour",
-      "schema": "float"
+      "schema": "integer"
     },
     {
       "@type": "Telemetry",
       "name": "ShelfSoldItemQuantityLastDay",
-      "schema": "float"
+      "schema": "integer"
     },
     {
       "@type": "Telemetry",
       "name": "ShelfSoldItemQuantityTotal",
-      "schema": "float"
+      "schema": "integer"
     },
     {
       "@type": "Telemetry",
@@ -80,7 +80,17 @@
     },
     {
       "@type": "Telemetry",
-      "name": "ConversionRate",
+      "name": "ConversionRateLastHour",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ConversionRateLastDay",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "ConversionRateTotal",
       "schema": "float"
     },
     {

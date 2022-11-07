@@ -40,7 +40,9 @@ namespace SignalRFunctions
         public static float ShelfSoldItemQuantityTotal;
         public static float ShelfCostPerItem;
         public static float ShelfPricePerItem;
-        public static float ConversionRate;
+        public static float ConversionRateLastHour;
+        public static float ConversionRateLastDay;
+        public static float ConversionRateTotal;
         public static float ShelfProfitLastHour;
         public static float ShelfProfitLastDay;
         public static float ShelfProfitTotal;
