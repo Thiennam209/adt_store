@@ -33,14 +33,14 @@ shelfid=$(az dt model create -n $adtname --models ./adt_store/models/store.json 
 productid=$(az dt model create -n $adtname --models ./adt_store/models/product.json --query [].id -o tsv)
 
 # echo 'instantiate ADT Instances'
-for i in {1..2}
+for i in {1..8}
 do
     echo "Create Shelf shelfid$i"
     az dt twin create -n $adtname --dtmi $shelfid --twin-id "shelfid$i"
     az dt twin update -n $adtname --twin-id "shelfid$i" --json-patch '[{"op":"add", "path":"/storeid", "value": "'"shelfid$i"'"}]'
 done
 
-for i in {1..2}
+for i in {1..16}
 do
     echo "Create Product productid$i"
     az dt twin create -n $adtname --dtmi $productid --twin-id "productid$i"
