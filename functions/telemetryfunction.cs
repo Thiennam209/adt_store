@@ -42,7 +42,7 @@ namespace My.Function
                     JObject deviceMessage = (JObject)JsonConvert.DeserializeObject(eventGridEvent.Data.ToString());
                     string deviceId = (string)deviceMessage["systemProperties"]["iothub-connection-device-id"];
                     var ID = deviceMessage["body"]["storeid"];
-                    var TimeInterval = deviceMessage["body"]["TimeInterval"];
+                    var timeInterval = deviceMessage["body"]["timeInterval"];
                     var ProductName = deviceMessage["body"]["ProductName"];
                     var ProductSellingRank = deviceMessage["body"]["ProductSellingRank"];
                     var SoldProductQuantity = deviceMessage["body"]["SoldProductQuantity"];
@@ -74,7 +74,7 @@ namespace My.Function
                     var ShelfProfitTotal = deviceMessage["body"]["ShelfProfitTotal"];
 
                     log.LogInformation($"Device: {deviceId} Device Id is: {ID}");
-                    log.LogInformation($"Device: {deviceId} Time interval is: {TimeInterval}");
+                    log.LogInformation($"Device: {deviceId} Time interval is: {timeInterval}");
                     log.LogInformation($"Device: {deviceId} ProductName is: {ProductName}");
                     log.LogInformation($"Device: {deviceId} ProductSellingRank is: {ProductSellingRank}");
                     log.LogInformation($"Device: {deviceId} SoldProductQuantity: {SoldProductQuantity}");
@@ -108,7 +108,7 @@ namespace My.Function
                     var storeTelemetry = new Dictionary<string, Object>()
                     {
                         ["storeid"] = ID,
-                        ["TimeInterval"] = TimeInterval,
+                        ["timeInterval"] = timeInterval,
                         ["ProductName"] = ProductName,
                         ["ProductSellingRank"] = ProductSellingRank,
                         ["SoldProductQuantity"] = SoldProductQuantity,
