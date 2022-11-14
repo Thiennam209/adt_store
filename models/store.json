@@ -15,6 +15,12 @@
     },
     {
       "@type": "Telemetry",
+      "name": "timeInterval",
+      "description": "The time interval of this data",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
       "name": "CustomerQuantityLastHour",
       "schema": "integer"
     },
