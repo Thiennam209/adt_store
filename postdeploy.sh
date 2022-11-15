@@ -40,7 +40,7 @@ do
     az dt twin update -n $adtname --twin-id "shelfid$i" --json-patch '[{"op":"add", "path":"/storeid", "value": "'"shelfid$i"'"}]'
 done
 
-for i in {1..16}
+for i in {1..2}
 do
     echo "Create Product productid$i"
     az dt twin create -n $adtname --dtmi $productid --twin-id "productid$i"
